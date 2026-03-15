@@ -44,14 +44,14 @@ xlabel('Position along rod')
 ylabel('Temperature (°C)')
 title('1D Heat Conduction Temperature Distribution')
 
-% 2D Rectangle Temperature Profile 
+% 2D Temperature Profile 
 x = linspace(0,4,5);      
 y = linspace(0,1,60);     
 
 % Temperature distribution along rod (USE solved values)
 T_line = [T_left T(1) T(2) T(3) T_right];
 
-% Create 2D temperature field
+% 2D temperature field
 [X,Y] = meshgrid(x,y);
 Z = repmat(T_line,length(y),1);
 
